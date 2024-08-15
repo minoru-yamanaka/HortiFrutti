@@ -1,6 +1,7 @@
-# simplicity
- Exemplo de site  usando html,css ejs
+# [Site Multi Frutti]()
 
- # VW:Viewport Width(largura da viwesport)
+Apresentação do Projeto: Briefing, Wireframe e Protótipo
+
+
  
 

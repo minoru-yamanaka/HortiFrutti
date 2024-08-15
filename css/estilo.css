@@ -6,10 +6,10 @@
 
 :root {
     /* variáveis para a paleta de cores */
-    --cor-titulo: #4d4d4d;
-    --cor-texto: #333; /* letra */ 
-    --cor-escura: #f23d4c; /* 30% */
-    --cor-clara: #44a666; /* fundo */
+    --cor-titulo: #191102;
+    --cor-texto: #191102; /* letra */ 
+    --cor-escura: #DB2955; /* 30% */
+    --cor-clara: #ececec; /* fundo */
     --cor-intermediaria: #ececec; /* n sei   */
 }
 
@@ -44,13 +44,36 @@ h1 {
     font-size: 1.5rem;
 }
 
+/* paleta_de_cores-> https://coolors.co/63a375-ececec-191102-db2955-ff7f11*/
+/* Botão Logo Link Vermelho #DB2955 -> Padrão Vermelho*/
 h1 a {
 
-    color: var(--cor-clara);
-    background-color: var(--cor-escura);
+    color:  #ececec/*var(--cor-clara)*/;
+    background-color: #DB2955/*var(--cor-escura)*/;
     padding: 0.3rem 1rem;
     border-radius: 4px;
 }
+
+/* Botão Logo Link Verde #63A375 -> Click Verde*/
+h1 :hover {
+
+    color:  #ececec/*var(--cor-clara)*/;
+    background-color: #63A375/*var(--cor-escura)*/;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+}
+
+/* 
+    Botão Logo Link Verde #63A375 -> Click Verde
+
+    h1 :hover {
+        color:  #DB2955;
+        background-color: #ececec;
+        padding: 0.3rem 1rem;
+        border-radius: 4px;
+        border: 2px solid #DB2955; 
+    }
+*/
 
 a {
     text-decoration: none;
@@ -75,14 +98,16 @@ nav h2 a {
     font-size: 1.2rem;
     padding: 1rem;
     display: inline-block;
-
 }
 
 nav h2 a:hover,
 nav a:focus,
 .menu a:focus,
 .menu a:hover {
-    background-color: var(--cor-intermediaria);
+    color:  #ececec/*var(--cor-clara)*/;
+    background-color: #63A375/*var(--cor-escura)*/;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
 }
 
 /* Regra de lista ul */
@@ -94,7 +119,7 @@ nav a:focus,
 
 /* Regra para formatar links contidos  na lista */
 .menu a {
-    color: var(--cor-escura);
+    color: #DB2955/*var(--cor-escura)*/;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -145,6 +170,7 @@ nav a:focus,
                       tamanho ideal,
                       tamanho maximo */
     font-size: clamp(3rem, 10vw, 7rem);
+    
 
 }
 
@@ -170,18 +196,21 @@ article h2 {
     font-size: 2rem;
     font-family: Raleway, sans-serif;
     color: var(--cor-titulo);
+    
 }
 
+/* ajuste do texto da page Home */
 .front-end,
 .historia,
 .localizacao {
+    /*text-align: center;*/
     text-align: center;
-
 }
 
 article p {
     padding: 0.5rem 0;
     font-size: 1.2rem;
+    
 }
 
 abbr {
@@ -193,13 +222,15 @@ address {
 }
 
 .historia {
-    background-image: url(../imagens/fundo-madeira.jpg);
+    /*background-image: url(../imagens/fundo-madeira.jpg);*/
+    background-image: url();
     background-attachment: fixed;
 }
 
 .historia h2 {
     color: var(--cor-clara);
-    text-shadow: red 3px 3px 10px;
+    /*text-shadow: red 3px 3px 10px;*/
+    color: #DB2955/*var(--cor-escura)*/;
 }
 
 .historia iframe {
@@ -220,7 +251,7 @@ address {
 }
 
 footer {
-    background-color: #44a666/*var(--cor-escura)*/;
+    background-color: #ececec/*var(--cor-escura)*/;
     color: #f23d4c /*var(--cor-clara)*/;
     height: 30vh;
     display: flex;
@@ -239,9 +270,8 @@ footer {
 .conteudo h2{
     padding-left: 0;
     font-size: 1.8rem;
-    
-   
 }
+
 table{
     width: 80%;
     margin: auto;
@@ -280,7 +310,8 @@ td:last-child::before{
     position: absolute;
     left: 10px;
 }
-.conteudo h2::before {content: "🤢";}
+/* a carinha de nojo da page produto Tirei */
+/*.conteudo h2::before {content: "🤢";}*/
 
 
 .galeria {
@@ -335,6 +366,8 @@ de largura para tudo (*) dentro do form div Exceto  label.*/
 form div *:not(label) {
     width: 70%;
 }
+
+/* Botões Contatos para Buscar e Enviar dados -> Padrão Vermelho*/
 button{
     background-color: var(--cor-escura);
     color: var(--cor-clara);
@@ -344,10 +377,11 @@ button{
     cursor: pointer;
     border-radius: 4px;
 }
+/* Botões Contatos para Buscar e Enviar dados -> Click Verde*/
 button:hover,button:focus {
-    background-color: var(--cor-clara);
-    color: var(--cor-escura);
-    box-shadow: var(--cor-escura) 0 0 2px;
+    background-color: #63A375/*var(--cor-clara)*/;
+    color: #ececec/*var(--cor-escura)*/;
+    /*box-shadow: var(--cor-escura) 0 0 2px;*/
 }
 #cep{width:60%;
 }
