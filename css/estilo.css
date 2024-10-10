@@ -323,7 +323,9 @@ td:last-child::before{
     border-radius: 100%;
     transform: scale(0.9);
     transition: 500ms;
-    filter: blur(1px) brightness(150%);
+    /*  filter: blur(1px) brightness(150%); */
+    height: 150px;
+    width: 150px;
 }
 /* Aplicamos  o :hover eo focus  ao seletor  de tags  "a" 
 em xvez de aplicar no "img" .Desta forma ,o acio,namento funcionará  tanto com o mouse  quanto com teclado.*/
@@ -378,6 +380,7 @@ button{
     cursor: pointer;
     border-radius: 4px;
 }
+
 /* Botões Contatos para Buscar e Enviar dados -> Click Verde*/
 button:hover,button:focus {
     background-color: #63A375/*var(--cor-clara)*/;
@@ -391,6 +394,8 @@ button:hover,button:focus {
     padding: 12px;
 }
 #status{font-size: 12px;}
+
+
 
 
 @media (min-width:570px) {
